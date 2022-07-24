@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --cyan: hsl(179, 62%, 43%);
+  --maximum-blue-green: hsla(179, 47%, 52%, 1);
+  --bright-ellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  color: var(--light-gray);
+}
+
+section {
+  display: grid;
+  place-items: center center;
+  height: 100vh;
+  background-color: var(--light-gray);
+}
+
+/* GRID */
+
+.grid-container {
+  display: grid;
+  width: 635px;
+  height: 475px;
+  border-radius: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 1fr, 1fr; */
+  box-shadow: 0 30px 30px 0 rgba(34, 33, 33, 0.2);
+}
+
+.card {
+  padding: 40px;
+}
+
+.card-1 {
+  grid-column: 1 / span 2;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  /* padding-bottom: 30px; */
+}
+
+.card-2 {
+  background-color: var(--cyan);
+  border-radius: 0 0 0 8px;
+}
+
+.card-3 {
+  background-color: var(--maximum-blue-green);
+  border-radius: 0 0 8px 0;
+}
+
+/* STYLES */
+
+.card-1 h1 {
+  color: var(--cyan);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.card-1 h3 {
+  color: var(--bright-ellow);
+  font-weight: 700;
+  /* margin-bottom: 15px; */
+}
+
+.card-1 p {
+  color: var(--grayish-blue);
+  line-height: 1.7;
+}
+
+.card-2 h3 {
+  font-weight: 700;
+  /* margin-bottom: 20px; */
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.price-box span {
+  color: var(--light-gray);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.price-box {
+  color: #81d1d1;
+}
+
+.card-2 p {
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: block;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--light-gray);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--bright-ellow);
+  padding: 18px 0 18px 0;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 30px rgba(34, 33, 33, 0.2);
+}
+
+.card-3 ul {
+  list-style: none;
+}
+
+.card-3 ul li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: hsla(203, 44%, 93%, 0.8);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
