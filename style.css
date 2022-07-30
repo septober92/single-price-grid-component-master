@@ -73,27 +73,21 @@ ul {
   margin-bottom: 25px;
 }
 
-h3 {
-  font-size: 1rem;
+h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-.card-1 h3 {
+.card-1 h2 {
   color: var(--bright-ellow);
-  font-weight: 700;
-  /* margin-bottom: 15px; */
 }
 
 .card-1 p {
   color: var(--grayish-blue);
   line-height: 2;
   font-size: 0.9rem;
-}
-
-.card-2 h3 {
-  font-weight: 700;
-  /* margin-bottom: 20px; */
 }
 
 .price-box {
