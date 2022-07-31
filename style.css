@@ -9,7 +9,6 @@
 }
 
 :root {
-  --font-size: 16px;
   --cyan: hsl(179, 62%, 43%);
   --maximum-blue-green: hsla(179, 47%, 52%, 1);
   --bright-ellow: hsl(71, 73%, 54%);
@@ -19,7 +18,7 @@
 
 body {
   font-family: 'Karla', sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--light-gray);
 }
 
@@ -29,7 +28,6 @@ main {
   align-items: center;
   min-height: 100vh;
   padding: 72px 0 120px 0;
-  /* padding: 32px; */
   background-color: var(--light-gray);
 }
 
@@ -215,11 +213,11 @@ footer a:hover {
   .card-1 p {
     color: var(--grayish-blue);
     line-height: 1.7;
+    font-size: 1rem;
   }
 
   .card-2 h3 {
     font-weight: 700;
-    /* margin-bottom: 20px; */
   }
 
   .price-box {
@@ -268,7 +266,7 @@ footer a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 0 0 8px 0;
     background-color: #fff;
     opacity: 0.15;
   }
